@@ -20,7 +20,6 @@ def run_console_app():
         try:
             if choice == "1":
                 products_input = input("Введите продукты в формате key:value, разделенные запятыми: ")
-                # Простой разбор ввода в словарь
                 products = {}
                 for pair in products_input.split(","):
                     key, value = pair.split(":")

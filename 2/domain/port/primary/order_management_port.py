@@ -3,7 +3,7 @@ from ...models import Order
 
 class OrderManagementPort(ABC):
     @abstractmethod
-    def create_order(self, forecast: str) -> Order:
+    def create_order(self, products: dict) -> Order:
         pass
 
     @abstractmethod
